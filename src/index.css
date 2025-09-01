@@ -1,0 +1,10 @@
+.custom-dash {
+  border-image: repeating-linear-gradient(
+      to right,
+      #fcad34 0,
+      #fcad34 10px,
+      /* panjang garis berwarna */ transparent 10px,
+      transparent 20px /* jarak antar garis */
+    )
+    1;
+}
