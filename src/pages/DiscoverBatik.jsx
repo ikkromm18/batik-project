@@ -1,5 +1,6 @@
 import { FaPencilAlt, FaStamp, FaPrint } from "react-icons/fa";
 import CardDiscoverBatik from "../components/CardDiscoverBatik";
+import { DiscoverHero } from "../components/discover/DiscoverHero";
 
 export default function DiscoverBatik() {
   const CardDiscoverData = [
@@ -22,6 +23,7 @@ export default function DiscoverBatik() {
 
   return (
     <>
+      <DiscoverHero />
       <section
         className="bg-[#FCAD34] min-h-screen py-16 px-8"
         style={{ fontFamily: "Montserrat, sans-serif" }}

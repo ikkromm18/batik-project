@@ -37,7 +37,7 @@ export default function MyNavbar() {
     >
       <div className="px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 text-xl font-extrabold text-yellow-300">
+          <div className="flex-shrink-0 text-3xl font-extrabold text-yellow-300">
             BATIK
           </div>
 
@@ -48,7 +48,7 @@ export default function MyNavbar() {
             aria-controls="fullmenu"
           >
             <svg
-              className="w-6 h-6"
+              className="w-10 h-10"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
@@ -77,7 +77,7 @@ export default function MyNavbar() {
             aria-label="Close menu"
           >
             <svg
-              className="w-8 h-8"
+              className="w-10 h-10"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 24 24"
