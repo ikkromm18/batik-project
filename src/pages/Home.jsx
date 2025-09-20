@@ -24,19 +24,19 @@ function Home() {
         style={{ fontFamily: "Irish Grover, cursive" }}
       >
         <p className="text-2xl font-semibold text-yellow-300">
-          Lorem ipsum dolor sit amet.
+          Noble Heritage, Pride of the Indonesian Nation
         </p>
-        <p className="text-2xl font-semibold text-yellow-300">
+        {/* <p className="text-2xl font-semibold text-yellow-300">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sit.
-        </p>
+        </p> */}
         <h1 className="font-bold text-8xl sm:text-9xl md:text-[200px] lg:text-[300px] text-yellow-300">
           BATIK
         </h1>
         <p className="text-2xl font-semibold text-yellow-300">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, sit.
+          More than a piece of cloth, this is a story of Indonesian identity.
         </p>
         <p className="text-2xl font-semibold text-yellow-300">
-          Lorem ipsum dolor sit amet.
+          Wear it with pride, cherish it forever.
         </p>
       </div>
 

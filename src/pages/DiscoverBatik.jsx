@@ -1,6 +1,10 @@
 import { FaPencilAlt, FaStamp, FaPrint } from "react-icons/fa";
 import CardDiscoverBatik from "../components/CardDiscoverBatik";
 import { DiscoverHero } from "../components/discover/DiscoverHero";
+import { AboutBatik } from "../components/discover/AboutBatik";
+import MotifBatik from "../components/discover/MotifBatik";
+import JenisDaerahBatik from "../components/discover/JenisDaerahBatik";
+import GaleriBatik from "../components/discover/GalleryBatik";
 
 export default function DiscoverBatik() {
   const CardDiscoverData = [
@@ -24,12 +28,19 @@ export default function DiscoverBatik() {
   return (
     <>
       <DiscoverHero />
+
+      <AboutBatik />
+
+      <MotifBatik />
+
+      <JenisDaerahBatik />
+
       <section
         className="bg-[#FCAD34] min-h-screen py-16 px-8"
         style={{ fontFamily: "Montserrat, sans-serif" }}
       >
         <h1 className="max-w-2xl font-extrabold text-8xl text-[#4C2514]">
-          DISCOVER BATIK
+          JENIS BATIK
         </h1>
         <p className="max-w-sm mt-4 font-medium">
           Jelajahi berbagai jenis batik Indonesia dengan keindahan dan filosofi
@@ -116,6 +127,8 @@ export default function DiscoverBatik() {
           </div>
         </div>
       </section>
+
+      <GaleriBatik />
     </>
   );
 }

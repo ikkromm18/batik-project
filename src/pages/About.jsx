@@ -1,4 +1,3 @@
-// import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CardAbout from "../components/CardAbout";
@@ -9,6 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 export default function About() {
   const pinSectionRef = useRef(null);
   const cardsRef = useRef([]);
+
+  const descRef = useRef(null);
+  const lettersRef = useRef([]);
+  const descText = `THIS WEBSITE IS A PLATFORM TO SHARE STO-RIES ABOUT BATIK, THE THEME
+OF MY GRADU-ATION PROJECT. ALL PHOTOS, VIDEOS, AND - INFORMATION ARE 
+TAKEN AND WRITTEN BY ME`;
 
   const cardData = [
     {
@@ -33,6 +38,41 @@ export default function About() {
     },
   ];
 
+  // Untuk Desc Section
+  useLayoutEffect(() => {
+    if (!descRef.current) return;
+
+    // Set awal: huruf transparan (warna target sama tapi alpha 0)
+    gsap.set(lettersRef.current, { color: "rgba(252,173,52,0.4)" });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: descRef.current,
+        start: "top 85%", // sesuaikan kapan mulai saat masuk viewport
+        end: "top 30%", // sesuaikan kapan selesai
+        scrub: true, // sinkron dengan scroll
+      },
+    });
+
+    // Ambil semua elemen bukan-spasi
+    const letterEls = lettersRef.current.filter(
+      (el) => el && el.dataset && el.dataset.space !== "true"
+    );
+
+    tl.to(letterEls, {
+      color: "#FCAD34",
+      stagger: 0.02, // jeda antar huruf; kecil -> lebih halus
+      ease: "none",
+      duration: 0.001, // durasi tiap item tidak penting karena scrub mengontrol
+    });
+
+    return () => {
+      if (tl.scrollTrigger) tl.scrollTrigger.kill();
+      tl.kill();
+    };
+  }, []);
+
+  // Untuk Why I Made Section
   useLayoutEffect(() => {
     if (!pinSectionRef.current) return;
 
@@ -44,6 +84,21 @@ export default function About() {
       pinSpacing: false,
     });
 
+    // Animasi judul saat pinning: scale naik sedikit saat scroll
+    gsap.fromTo(
+      pinSectionRef.current.querySelector("h2"),
+      { scale: 1 },
+      {
+        scale: 1.1,
+        scrollTrigger: {
+          trigger: pinSectionRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      }
+    );
+
     ScrollTrigger.batch(cardsRef.current, {
       start: "top 80%",
       onEnter: (batch) =>
@@ -51,13 +106,11 @@ export default function About() {
           opacity: 0,
           y: 100,
           stagger: 0.2,
-          duration: 1,
+          duration: 0,
           ease: "power3.out",
         }),
       once: true,
     });
-
-    // ScrollTrigger.refresh();
 
     return () => {
       trigger.kill();
@@ -93,7 +146,8 @@ export default function About() {
           </div>
         </section>
 
-        <section className="min-h-screen bg-[#843514]">
+        {/* Desc Section */}
+        <section className="min-h-screen bg-[#843514] desc-section">
           <div className="flex flex-col p-16 space-y-4 pt-28">
             {/* Icon Information */}
             <div className="flex items-center justify-center p-5 rounded-full bg-[#FCAD34] w-16 h-16">
@@ -101,12 +155,22 @@ export default function About() {
             </div>
 
             <h2
-              className="text-4xl text-[#FCAD34] font-extrabold leading-relaxed max-w-4xl"
-              style={{ fontFamily: "Montserrat, sans-serif" }}
+              ref={descRef}
+              className="text-4xl font-extrabold leading-relaxed max-w-4xl"
+              style={{ fontFamily: "Montserrat, sans-serif", color: "#FCAD34" }}
+              aria-label={descText}
             >
-              THIS WEBSITE IS A PLATFORM TO SHARE STORIES ABOUT BATIK, THE THEME
-              OF MY GRADUATION PROJECT. ALL PHOTOS, VIDEOS, AND INFORMATION ARE
-              TAKEN AND WRITTEN BY ME
+              {descText.split("").map((ch, i) => (
+                <span
+                  key={i}
+                  ref={(el) => (lettersRef.current[i] = el)}
+                  data-space={ch === " "}
+                  className="inline-block"
+                  style={{ display: "inline-block", whiteSpace: "pre" }}
+                >
+                  {ch === " " ? "\u00A0" : ch}
+                </span>
+              ))}
             </h2>
           </div>
         </section>
@@ -140,7 +204,7 @@ export default function About() {
         ${index % 3 === 1 ? "justify-end" : ""} 
         ${index % 3 === 2 ? "justify-center" : ""}`}
                 >
-                  <div className="max-w-xl">
+                  <div className="max-w-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                     <CardAbout title={cd.title} body={cd.body} />
                   </div>
                 </div>
@@ -163,9 +227,10 @@ export default function About() {
                 className=" text-[#FCAD34] font-semibold"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laboriosam quas molestiae distinctio cum fuga itaque nihil
-                perspiciatis totam in accusantium.
+                Batik is not just a fabric; it is a living heritage that tells
+                stories of our ancestors, their beliefs, and their artistry.
+                Through this project, I hope to inspire a deeper appreciation
+                and pride in this timeless craft.
               </p>
             </div>
 
