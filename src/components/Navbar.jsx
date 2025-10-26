@@ -8,9 +8,10 @@ export default function MyNavbar() {
   const navItems = [
     { label: "Home", url: "/" },
     { label: "About", url: "/about" },
-    { label: "Discover Batik", url: "/discover-batik" },
-    { label: "Fun & Feedback", url: "/feedback" },
-    { label: "Grattitude", url: "/gratitude" },
+    { label: "Gallery", url: "/gallery" },
+    // { label: "Map", url: "/feedback" },
+    { label: "History", url: "/history" },
+    { label: "Making Process", url: "/makingprocess" },
   ];
 
   const openMenu = () => {

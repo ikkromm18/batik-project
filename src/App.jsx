@@ -5,6 +5,10 @@ import DiscoverBatik from "./pages/DiscoverBatik";
 import Feedback from "./pages/Feedback";
 import Gratitude from "./pages/Gratitude";
 import Navbar from "./components/Navbar";
+import Gallery from "./pages/Gallery";
+import GalleryDetail from "./pages/GalleryDetail";
+import HistoryBatik from "./pages/HistoryBatik";
+import MakingProcessBatik from "./pages/MakingProcessBatik";
 
 export default function App() {
   return (
@@ -15,6 +19,10 @@ export default function App() {
         <Routes>
           <Route path="/" index element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery/:id" element={<GalleryDetail />} />
+          <Route path="/history" element={<HistoryBatik />} />
+          <Route path="/makingprocess" element={<MakingProcessBatik />} />
           <Route path="/discover-batik" element={<DiscoverBatik />} />
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/gratitude" element={<Gratitude />} />
