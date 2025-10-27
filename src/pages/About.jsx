@@ -137,13 +137,13 @@ TAKEN AND WRITTEN BY ME`;
           <hr className="relative z-0 w-full border-dashed custom-dash" />
 
           {/* Gambar di tengah bawah */}
-          <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center">
+          {/* <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center">
             <img
               className="max-w-[400px] w-full"
               src="/images/batik-pw2.png"
               alt="Batik"
             />
-          </div>
+          </div> */}
         </section>
 
         {/* Desc Section */}
