@@ -1,0 +1,2 @@
+public/process/*.MOV filter=lfs diff=lfs merge=lfs -text
+public/process/*.mov filter=lfs diff=lfs merge=lfs -text
