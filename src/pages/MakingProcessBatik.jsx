@@ -37,7 +37,7 @@ export default function MakingProcessBatik() {
       name: "Nyungging",
       subtitle: "Designing the Motif",
       type: "video",
-      src: "https://www.youtube.com/embed/X1A6kD6Fu9M?si=3bgqOxrI9FOeSQWI",
+      src: "./videos/nyungging.webm",
       description:
         "The artist begins by drawing the initial batik design on paper. This stage requires creativity and deep understanding of traditional batik patterns and meanings.",
       details: [
@@ -51,7 +51,7 @@ export default function MakingProcessBatik() {
       name: "Njaplak / Jiplak",
       subtitle: "Transferring the Pattern",
       type: "video",
-      src: "//www.youtube.com/embed/r4vk_1Cduss?si=E9ulhnVIAwh5NUJy",
+      src: "./videos/njaplak.webm",
       description:
         "The completed paper design is placed under the mori cloth, and outlines are traced onto fabric using pencil for accurate proportions.",
       details: ["Pattern tracing", "Proportion accuracy", "Pencil outlining"],
@@ -61,7 +61,7 @@ export default function MakingProcessBatik() {
       name: "Nglowong",
       subtitle: "Outlining with Wax",
       type: "video",
-      src: "https://www.youtube.com/embed/QWowoffXk5s?si=bTIpXLAkcEa1L_Ur",
+      src: "./videos/nglowong.webm",
       description:
         "Using a canting, hot malam is carefully applied to trace over pencil outlines. Waxed lines protect areas from dye - requires steady hands and focus.",
       details: ["Canting technique", "Wax application", "Steady hand required"],
@@ -71,7 +71,7 @@ export default function MakingProcessBatik() {
       name: "Ngiseni",
       subtitle: "Filling the Motif",
       type: "video",
-      src: "https://www.youtube.com/embed/l_-NTo-0q_k?si=NTI86-IgNord2BGm",
+      src: "./videos/ngiseni.webm",
       description:
         "Artist adds smaller details and patterns inside larger motifs using canting. Fine details like dots, curves, and lines give character and texture.",
       details: ["Detail work", "Texture creation", "Pattern refinement"],
@@ -81,7 +81,7 @@ export default function MakingProcessBatik() {
       name: "Nyolet",
       subtitle: "Coloring with a Brush",
       type: "video",
-      src: "https://www.youtube.com/embed/bGJyRCBk-a8?si=g8Impfxy6PGaoN37",
+      src: "./videos/nyolet.webm",
       description:
         "Color is added to specific parts using a brush for gentle blending and shading effects. Usually done before first full dyeing process.",
       details: ["Brush application", "Color blending", "Shading effects"],
@@ -91,7 +91,7 @@ export default function MakingProcessBatik() {
       name: "Mopok",
       subtitle: "Covering Colored Areas",
       type: "video",
-      src: "https://www.youtube.com/embed/nXdLYRyfruI?si=GftuJs2kuH6ac9Xt",
+      src: "./videos/mopok.webm",
       description:
         "After brushing color, areas are covered with wax to protect them from next dye bath. Ensures colors stay bright and don't mix.",
       details: ["Color protection", "Wax covering", "Layer preservation"],
@@ -101,7 +101,7 @@ export default function MakingProcessBatik() {
       name: "Ngelir",
       subtitle: "Dyeing the Fabric",
       type: "video",
-      src: "https://www.youtube.com/embed/zJK45dVLO-s?si=V0xlu1Qda3ASGo_e",
+      src: "./videos/ngelir.webm",
       description:
         "Fabric is dipped into dye bath. Unwaxed areas absorb color while waxed parts remain unchanged. Repeated for multiple colors.",
       details: [
@@ -115,7 +115,7 @@ export default function MakingProcessBatik() {
       name: "Nglorod",
       subtitle: "Removing the Wax",
       type: "video",
-      src: "https://www.youtube.com/embed/8eMyBZ2IwG0?si=Co_FUx1TPtF3W0_K",
+      src: "./videos/nglorod.webm",
       description:
         "Fabric is boiled in hot water to remove wax. Wax melts and floats to surface, revealing colorful design underneath.",
       details: ["Hot water boiling", "Wax removal", "Design revelation"],
@@ -125,7 +125,7 @@ export default function MakingProcessBatik() {
       name: "Ngrentesi",
       subtitle: "Adding Fine Details",
       type: "video",
-      src: "https://www.youtube.com/embed/zibKQ_fxVp8?si=c3EPjOj9-WuEUki5",
+      src: "./videos/ngrentesi.webm",
       description:
         "Artist adds tiny dots, thin lines, or textures using canting. Adds depth and refinement - signature of batik tulis craftsmanship.",
       details: ["Fine dot work", "Depth creation", "Final refinement"],
@@ -135,7 +135,7 @@ export default function MakingProcessBatik() {
       name: "Nglorod",
       subtitle: "Final Wax Removal",
       type: "video",
-      src: "https://www.youtube.com/embed/8eMyBZ2IwG0?si=Co_FUx1TPtF3W0_K",
+      src: "./videos/nglorod.webm",
       description:
         "Last wax removal process completely clears all remaining wax. After rinsing and drying, batik cloth is ready - a unique handmade artwork.",
       details: ["Complete wax removal", "Final rinsing", "Artwork completion"],

@@ -16,7 +16,7 @@ export default function HistoryBatik() {
         },
         {
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Niya_batik.jpg/250px-Niya_batik.jpg",
+            "https://www.batikguild.org.uk/images/wax-resist-textile-niya-xinjiang-china.jpg",
           title: "Fragment from Niya, Tarim Basin",
           description:
             "Dyed textile fragments from 3rd-4th century China showing early resist dyeing techniques that predate Javanese batik development.",
@@ -45,7 +45,7 @@ export default function HistoryBatik() {
       items: [
         {
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Prajnaparamita_clothes_detail.JPG/250px-Prajnaparamita_clothes_detail.JPG",
+            "https://www.batikguild.org.uk/images/13th-century-stone-carving-east-java-batik-patterns.jpg",
           title: "Prajnaparamita Statue Detail",
           description:
             "13th century East Javanese statue showing clothing details with patterns similar to traditional batik motifs, suggesting early development during Java's Hindu-Buddhist period.",
@@ -82,7 +82,7 @@ export default function HistoryBatik() {
         },
         {
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sarong%2C_Northern_Java%2C_Indonesia%2C_1900-1910%2C_cotton_-_Cincinnati_Art_Museum_-_DSC04349.JPG/250px-Sarong%2C_Northern_Java%2C_Indonesia%2C_1900-1910%2C_cotton_-_Cincinnati_Art_Museum_-_DSC04349.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Sarong%2C_Northern_Java%2C_Indonesia%2C_1900-1910%2C_cotton_-_Cincinnati_Art_Museum_-_DSC04349.JPG/960px-Sarong%2C_Northern_Java%2C_Indonesia%2C_1900-1910%2C_cotton_-_Cincinnati_Art_Museum_-_DSC04349.JPG?20130928112027",
           title: "Pesisir Coastal Style Sarong",
           description:
             "Early 20th century sarong from northern Javanese coast showing Chinese and European influences in coastal batik production.",
@@ -90,7 +90,7 @@ export default function HistoryBatik() {
         },
         {
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Batik_pedalaman_-_sidha_drajat.JPG/250px-Batik_pedalaman_-_sidha_drajat.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Batik_pedalaman_-_sidha_drajat.JPG/960px-Batik_pedalaman_-_sidha_drajat.JPG",
           title: "Contemporary Solo Batik",
           description:
             "Modern inland batik from Solo, Indonesia with sidha drajat pattern, maintaining traditional techniques while evolving designs.",
@@ -98,7 +98,7 @@ export default function HistoryBatik() {
         },
         {
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Afrikanische_Textilien.jpg/250px-Afrikanische_Textilien.jpg",
+            "https://scope.cimsa.or.id/wp-content/uploads/2021/10/Afrikanische_Textilien.jpg",
           title: "African Wax Print Adaptation",
           description:
             "Waxprint fabrics in Togo, representing African adaptation of Javanese batik with larger motifs, thicker lines, and brighter colors.",
@@ -121,6 +121,27 @@ export default function HistoryBatik() {
             A journey through centuries of cultural heritage, from ancient
             resist dyeing techniques to the sophisticated art form we know
             today.
+          </p>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#4C2514]/80 backdrop-blur-sm rounded-2xl p-8 border border-[#FCAD34]/20 shadow-2xl">
+          <h2 className="text-3xl font-bold text-[#FCAD34] mb-6 text-center">
+            What Is Batik ?
+          </h2>
+
+          <p className="text-sm text-white text-center font-light">
+            <strong>Batik</strong> is a dyeing technique using wax resist. The
+            term is also used to describe patterned textiles created with that
+            technique. Batik is made by drawing or stamping wax on a cloth to
+            prevent colour absorption during the dyeing process. This creates a
+            patterned negative when the wax is removed from the dyed cloth.
+            Artisans may create intricate coloured patterns with multiple cycles
+            of wax application and dyeing. Patterns and motifs vary widely even
+            within countries. Some patterns hold symbolic significance and are
+            used only in certain occasions, while others were created to satisfy
+            market demand and fashion trends.
           </p>
         </div>
       </div>
@@ -174,7 +195,7 @@ export default function HistoryBatik() {
 
                     {/* Text Content */}
                     <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-3 leading-tight">
+                      <h3 className="text-xl font-bold text-[#FCAD34] mb-3 leading-tight">
                         {item.title}
                       </h3>
                       <p className="text-white/80 leading-relaxed">
@@ -187,119 +208,6 @@ export default function HistoryBatik() {
             </div>
           </section>
         ))}
-      </div>
-
-      {/* Historical Significance Section */}
-      <div className="max-w-4xl mx-auto mt-20 px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#4C2514]/80 backdrop-blur-sm rounded-2xl p-8 border border-[#FCAD34]/20 shadow-2xl">
-          <h2 className="text-3xl font-bold text-[#FCAD34] mb-6 text-center">
-            Cultural Significance
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-white/80">
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="bg-[#FCAD34] text-[#4C2514] p-2 rounded-lg">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                    <path
-                      fillRule="evenodd"
-                      d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-white mb-1">
-                    Global Influence
-                  </h4>
-                  <p className="text-sm">
-                    From African wax prints to Aboriginal Australian art, batik
-                    techniques have inspired textile traditions worldwide.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <div className="bg-[#FCAD34] text-[#4C2514] p-2 rounded-lg">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-white mb-1">
-                    UNESCO Recognition
-                  </h4>
-                  <p className="text-sm">
-                    Indonesian batik was recognized by UNESCO in 2009 as a
-                    Masterpiece of Oral and Intangible Heritage of Humanity.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="bg-[#FCAD34] text-[#4C2514] p-2 rounded-lg">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-white mb-1">
-                    Cultural Exchange
-                  </h4>
-                  <p className="text-sm">
-                    Batik represents centuries of cultural exchange between
-                    Java, India, China, Africa, and Europe through trade routes.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <div className="bg-[#FCAD34] text-[#4C2514] p-2 rounded-lg">
-                  <svg
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-white mb-1">
-                    Technological Evolution
-                  </h4>
-                  <p className="text-sm">
-                    From hand-drawn canting to copper stamp (cap) printing,
-                    batik techniques have evolved while preserving traditional
-                    methods.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Background Decoration */}

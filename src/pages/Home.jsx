@@ -39,21 +39,7 @@ function Home() {
       <Footer
         container
         className="absolute bottom-0 left-0 w-full px-8 py-4 bg-transparent"
-      >
-        <div className="flex justify-center space-x-6">
-          <button className="text-xl font-semibold text-yellow-300 hover:text-yellow-400 transition-colors">
-            English
-          </button>
-          <span className="text-yellow-300">|</span>
-          <button className="text-xl font-semibold text-yellow-300 hover:text-yellow-400 transition-colors">
-            Bahasa Indonesia
-          </button>
-          <span className="text-yellow-300">|</span>
-          <button className="text-xl font-semibold text-yellow-300 hover:text-yellow-400 transition-colors">
-            中文
-          </button>
-        </div>
-      </Footer>
+      ></Footer>
     </div>
   );
 }
